@@ -1,0 +1,65 @@
+/**
+ * Table of Contents
+ *
+ *  1.0 - Colors
+ *  2.0 - Fonts
+ *  3.0 - Transitions
+ *  4.0 - Elements
+
+ * ----------------------------------------------------------------------------
+ */
+
+
+  /**
+ * 3.0 Transitions
+ * ----------------------------------------------------------------------------
+ */
+
+ @mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+@mixin translate2d($horizontal:0, $vertical:0) {
+  transform: translate($horizontal,$vertical)
+}
+
+@mixin triangleDownCenter($width, $height, $color) {
+  $triangleWidth: $width/2;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  margin-left: -$triangleWidth;
+  width: 0;
+  height: 0;
+  border-left: $triangleWidth solid transparent;
+  border-right: $triangleWidth solid transparent;
+  border-top: $height solid $color;
+  content: ' ';
+}
+
+@mixin triangleUpCenter($width, $height, $color) {
+  $triangleWidth: $width/2;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  margin-left: -$triangleWidth;
+  width: 0;
+  height: 0;
+  border-left: $triangleWidth solid transparent;
+  border-right: $triangleWidth solid transparent;
+  border-bottom: $height solid $color;
+  content: ' ';
+}
+
+@mixin dashed-border($dashlength, $spacelength, $borderwidth, $color, $position: top) {
+  $per: percentage($dashlength / ($dashlength + $spacelength));
+  background-image: linear-gradient(to right, $color 0%, $color $per, rgba(0, 0, 0, 0) $per);
+  background-position: 0 $position;
+  background-size: ($dashlength + $spacelength) $borderwidth;
+  background-repeat: repeat-x;
+}

@@ -1,0 +1,85 @@
+/**
+ * Table of Contents
+ *
+ *  1.0 - Colors
+ *  2.0 - Fonts
+ *  3.0 - Transitions
+ *  4.0 - Elements
+
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+/**
+ * 1.0 Colors
+ * ----------------------------------------------------------------------------
+ */
+
+ $primaryColor: #3fc3db;
+
+ $secondaryColor: #1d3460;
+
+ $linkColor: $primaryColor;
+
+ $linkHoverColor: $secondaryColor;
+
+ $buttonBorder: #0edfbf;
+
+ $buttonHoverBorder: #69eeda;
+
+ $darkestGrey: #222222;
+
+ $darkGrey: #363636;
+
+ $grey: #ebebeb;
+
+ $lightGrey: #e2e2e2;
+
+ $green: #70ac37;
+
+ $red: #c71f18;
+
+ $rgbaBlack: rgba(33,35,37,0.87);
+
+ $rgbaWhite: rgba(255,255,255,0.2);
+
+ $rgbaPrimary: rgba(90,33,73,0.7);
+
+ $black: #101117;
+
+ $white: #fff;
+
+
+/**
+ * 2.0 Fonts
+ * ----------------------------------------------------------------------------
+ */
+
+ $primaryFont: "proxima-nova",sans-serif;
+
+ $secondaryFont: "proxima-nova-condensed",sans-serif;
+
+ $bodyFont: "proxima-nova",sans-serif;
+
+
+
+ /**
+ * 3.0 Transitions
+ * ----------------------------------------------------------------------------
+ */
+
+ $transitionTime : .3s all;
+
+/**
+ * 4.0 Elements
+ * ----------------------------------------------------------------------------
+ */
+
+ $menu-icon-color: $primaryColor;
+
+ $borderRadius : 3px;
+
+ $off-canvas-width: 90%;
+
+

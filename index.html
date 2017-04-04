@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zChat</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/routes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="chat-js/strophe.min.js"></script>
+    <script src="chat-js/strophe.register.js"></script>
+    <script src="chat-js/strophe.roster.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="chat-js/chat.js"></script>
+    <script src="assets/js/controller/chatCtrl.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </head>
+
+  <body ng-controller="chatCtrl">
+    <!-- new content -->
+    <div class="content full-content" ng-view></div>
+    <!-- end of new content -->
+  </body>
+</html>

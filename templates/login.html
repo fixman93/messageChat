@@ -1,0 +1,25 @@
+
+
+<div class="registration">
+    <div class="login-logo"></div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="" role="presentation">
+        <a href="#register" >Register</a>
+      </li>
+      <li class="active" role="presentation">
+        <a aria-controls="profile" data-toggle="tab" href="/#log" role="tab">Login</a>
+      </li>
+      
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="login" role="tabpanel">
+        <div class="form">
+          <label for="username">Username</label> 
+          <input class="form-control" id="username" ng-model="fulluser.user" name="username" placeholder="Name" type="text"> 
+          <label for="password">Password</label> 
+          <input class="form-control" id="password" ng-model="fulluser.pass" name="password" placeholder="Password" type="password"> 
+          <input class="btn register-btn" ng-click="login()" type="submit" value="Login">
+        </div>
+      </div>
+    </div>
+  </div>

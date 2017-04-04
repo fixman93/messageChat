@@ -1,0 +1,104 @@
+<header>
+       <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=""><img src="https://remote.com/assets/images/logo.png" class="img-responsive"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class=""><a href="index.html">Home</a></li>
+              <li><a href="">Profile</a></li>
+              <li><a href="">Jobs</a></li>
+              <li><a href="">Recruit</a></li>
+              <li><a href="">Connect</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown messages-status">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <div class="latest-messages clearfix">
+                    <h3 class="pull-left">Latest Messages <span>0</span></h3>
+                    <a class="pull-right" href="">View All</a>
+                  </div>
+                  <ul id="friends-list1">
+         </ul>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="" ng-click="logout()">Logout</a></li>
+                  <li><a href="" onclick="remove_friend()">Remove Friend</a></li>
+                  <!--<li><a href="javascript:join_group()">Join Group</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+     </header>
+     <div class="clearfix"></div>
+<main class="message-main clearfix">
+       <aside class="message-sidebar clearfix">
+         <div class="header clearfix">
+           <h3 class="pull-left"><span id="message-number"></span>Inbox <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+           <a class="pull-right" href=""><img src="assets/img/fill-1@3x.png"></a>
+         </div>
+         <ul id="friends-list">
+         </ul>
+        
+       </aside>
+       <div class="message-container">
+        <!-- new message-box-->
+         <div class="new-message-box hidden">
+           <img src="assets/img/group-20@2x.png" class="img-responsive">
+           <p>Select a message thread or compose a new one</p>
+           <a href=""><img src="assets/img/fill-1@3x.png">New Message</a>
+         </div>
+         <!-- end of new message box -->
+         <!-- send message -->
+         <div class="send-message-to message-to ">
+           <img src="assets/img/group-20@2x.png" class="img-responsive">
+           <label>Send MESSAGE TO</label>
+           <form>
+             <input type="text" id="search-friend">
+           <input type="submit" value="submit" class="btn add-friend-btn" onclick="add_friend()">
+           </form>
+           <a href="" class="search-user-cancel">Cancel</a>
+         </div>
+         <!-- end of send message -->
+
+         <!-- message content -->
+         <div class="message-content hidden" id="message-contents">
+            <div class="send-message-to message-content-top">
+              <img src="assets/img/group-20@2x.png" class="img-responsive">
+              <h3>Boris Civcic</h3>
+              <p>CEO & Product Manager * San Francisco</p>
+              <a href="" class="search-user-cancel">View Profile</a>
+            </div>
+            
+             <div class="message-content-bottom">
+              <div class="mess-box">
+                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                <input type="text" class="form-control">
+                <button class="btn">Send</button>
+              </div>
+             </div>
+           </div>
+         <!-- end of message content -->
+        <div class="grid-block" id="message_boxes">
+          
+        </div>
+       </div>
+       
+       
+     </main>

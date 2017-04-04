@@ -1,0 +1,23 @@
+{
+  "name": "2orange",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Boris Civcic <civcicboris93@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "isotope": "~2.2.2"
+  }
+}
